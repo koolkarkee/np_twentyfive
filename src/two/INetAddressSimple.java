@@ -20,11 +20,10 @@ public class INetAddressSimple {
 	
 	public static void printHost(String ipAddress) {
 		try {
-			InetAddress inetAddress = InetAddress.getByName(ipAddress);
-			System.out.println(inetAddress.getHostName());
-			System.out.println("hello world");
+			InetAddress inetAddress = InetAddress.getByName(ipAddress);			
 			System.out.println(inetAddress.getCanonicalHostName());
-			//System.out.println(address.getHostAddress());
+			System.out.println(inetAddress.getHostAddress());			
+			System.out.println(inetAddress.getAddress());			
 		} 
 		catch(UnknownHostException ex) {
 			System.out.println("Unknown Host Exception : " + ex.getMessage());
@@ -35,8 +34,11 @@ public class INetAddressSimple {
 	}
 
 	public static void main(String[] args) {
-//		String facebook = "www.facebook.com";		
-//		printIPAddress(facebook);
+		String facebook = "www.facebook.com";		
+		printIPAddress(facebook);
+		
+		String ipAddress = "163.70.145.35";
+		printHost(ipAddress);
 //		
 //		String localhost = "localhost";
 //		printIPAddress(localhost);
@@ -44,8 +46,8 @@ public class INetAddressSimple {
 //		String unknownwebsite = "adfasdfasdfas.com";
 //		printIPAddress(unknownwebsite);
 		
-		String myIpLocal = "104.21.79.8";
-		printIPAddress(myIpLocal);
+//		String myIpLocal = "104.21.79.8";
+//		printIPAddress(myIpLocal);
 	}
 
 }

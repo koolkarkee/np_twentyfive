@@ -3,8 +3,8 @@ package two;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class INetAddressSimple {
-	
+public class GetterMethodDemo {
+
 	public static void printIPAddress(String host) {
 		try {
 			InetAddress address = InetAddress.getByName(host);
@@ -32,22 +32,13 @@ public class INetAddressSimple {
 			System.out.println("Exception : " + e.getMessage());
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		String facebook = "www.facebook.com";		
 		printIPAddress(facebook);
 		
 		String ipAddress = "163.70.145.35";
 		printHost(ipAddress);
-//		
-//		String localhost = "localhost";
-//		printIPAddress(localhost);
-//		
-//		String unknownwebsite = "adfasdfasdfas.com";
-//		printIPAddress(unknownwebsite);
-		
-//		String myIpLocal = "104.21.79.8";
-//		printIPAddress(myIpLocal);
 	}
 
 }

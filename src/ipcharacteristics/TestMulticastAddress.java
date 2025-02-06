@@ -22,7 +22,7 @@ public class TestMulticastAddress {
 	}
 	
 	public static void showDemo() {
-		System.out.println("------------- Site Local Address Demo ---------------");
+		System.out.println("------------- Multicast Demo ---------------");
 		
 		demoMulticastAddress("127.0.0.1");
 		demoMulticastAddress("128.0.0.1");

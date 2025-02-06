@@ -2,7 +2,7 @@ package ipcharacteristics;
 
 import java.net.InetAddress;
 
-public class TestLocalLoopBack {
+public class TestLocalLoopBackAddress {
 	private static void checkLoopBackAddress(InetAddress address, String ip) {
 		if(address.isLoopbackAddress()) {
 			System.out.println(ip + " is a local loop back address.");

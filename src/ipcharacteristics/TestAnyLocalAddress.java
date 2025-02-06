@@ -26,6 +26,9 @@ public class TestAnyLocalAddress {
 		
 		demoAnyLocalAddress("80.80.80.80");
 		demoAnyLocalAddress("127.0.0.3");
+		demoAnyLocalAddress("128.0.0.3");
+		demoAnyLocalAddress("127.255.255.255");
+		demoAnyLocalAddress("0:0:0:0:0:0:0:0");
 		
 		System.out.println("----------------------------\n");
 	}

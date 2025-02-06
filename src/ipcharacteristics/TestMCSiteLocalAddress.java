@@ -5,7 +5,7 @@ import java.net.InetAddress;
 public class TestMCSiteLocalAddress {
 	private static void checkMCSiteLocalAddress(InetAddress address, String ip) {
 		if(address.isMulticastAddress()) {
-			if(address.isMCOrgLocal()) {
+			if(address.isMCSiteLocal()) {
 				System.out.println(ip + " is MCSite Local address.");
 			}
 			else {

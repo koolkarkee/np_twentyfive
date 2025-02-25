@@ -49,7 +49,7 @@ public class URLInstance {
 	}
 	
 	public static void print(URL url, String methodName) {
-		System.out.println("------------- Calling from " + methodName + "----------");
+		System.out.println("------------- Calling from " + methodName + "----------\n");
 		
 		//printing the URL object
 		System.out.println("01. URL : " + url.toString());
@@ -60,9 +60,8 @@ public class URLInstance {
 		System.out.println("06. Authority : " + url.getAuthority());
 		System.out.println("07. Query : " + url.getQuery());
 		System.out.println("08. Default Port : " + url.getDefaultPort());
-		//System.out.println("9. Content : " + url.getContent());
-		System.out.println("10. Ref : " + url.getRef());
+		System.out.println("09. Ref : " + url.getRef());
 		
-		System.out.println("--------------------------------------");
+		System.out.println("\n--------------------------------------");
 	}
 }

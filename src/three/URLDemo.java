@@ -19,8 +19,7 @@ public class URLDemo {
 		
 		printUrlMatches(url1, url2);
 	}
-	
-	 
+		 
 	private static void demoRelativeURL() {
 		String baseUrlString = "https://google.com";
 		
@@ -35,12 +34,24 @@ public class URLDemo {
 		URL url = URLInstance.createURL("https", "bibekkarki.com", 8080, "/koolkarkee");
 		URLInstance.print(url, "demoURLThird");
 	}
+	
+	private static void demoURLContent() {
+		System.out.println("------- Calling from demoURLContent -------------");
+		URLData.showDataWithOpenStream("https://google.com");
+		System.out.println("--------------------------------------------------");
+		
+		System.out.println("------- Calling from demoURLContent -------------");
+		URLData.showDataWithOpenConnection("https://www.facebook.com");
+		System.out.println("--------------------------------------------------");
+	
+	}
 
 	public static void main(String[] args) {
 		showSimpleURLDemo();
 		testURLmatches();
 		demoRelativeURL();
 		demoURLToken();
+		demoURLContent();
 	}
 
 }

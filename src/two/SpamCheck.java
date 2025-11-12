@@ -44,10 +44,10 @@ public class SpamCheck {
 	}
 	
 	public static void main(String[] args) {
-		String testIpSpam = "127.0.0.2"; 
+		String testIpSpam = "192.168.10.76"; 
         printSpam(testIpSpam);
         
-        printSpam("cryptogrowthanalysis.com@usa.com");
+        //printSpam("cryptogrowthanalysis.com@usa.com");
  	}
 
 }

@@ -21,7 +21,7 @@ public class URIBasic {
 			URI absolute = new URI("http", "//www.ibiblio.org", null); 
 			System.out.println(absolute);
 			
-			URI relative = new URI(null, "/javafaq/index.shtml", "today"); 
+			URI relative = new URI("ftp", "/javafaq/index.shtml", "today"); 
 			System.out.println(relative);
 		} catch (URISyntaxException e) {
 			System.err.println(e.getMessage());

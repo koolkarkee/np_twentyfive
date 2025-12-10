@@ -8,8 +8,6 @@ public class URLEncoderDemo {
 	public static void main(String[] args) {
 		try {
 			System.out.println(URLEncoder.encode("This string has spaces", "UTF-8"));
-			System.out.println(URLEncoder.encode("This string has spaces", "UTF-16"));
-			System.out.println(URLEncoder.encode("This*string*has*spaces", "UTF-8"));
 			System.out.println(URLEncoder.encode("This%string%has%spercentages", "UTF-8"));
 			System.out.println(URLEncoder.encode("This+string+has+pluses", "UTF-8"));
 			System.out.println(URLEncoder.encode("This/string/has/", "UTF-8"));

@@ -10,8 +10,7 @@ public class AllMIMEHeaders {
 
 	public static void main(String[] args) {
 		try {
-			URL url = new URL("https://www.google.com");
-			
+			URL url = new URL("https://mocki.io/v1/d1ccd5c3-d6ee-4fda-b6dd-030528bb2807");			
 			try {
 				URLConnection uc = url.openConnection();
 				

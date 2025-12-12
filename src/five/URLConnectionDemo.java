@@ -10,8 +10,7 @@ public class URLConnectionDemo {
 	public static void main(String[] args) {
 		try {
 			//create a url 
-//			URL url = new URL("https://mocki.io/v1/d1ccd5c3-d6ee-4fda-b6dd-030528bb2807");
-			URL url = new URL("https://www.google.com");
+			URL url = new URL("https://mocki.io/v1/d1ccd5c3-d6ee-4fda-b6dd-030528bb2807");
 			
 			//get a URLConnection object 
 			try {

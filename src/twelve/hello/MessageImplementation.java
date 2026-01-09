@@ -12,6 +12,6 @@ public class MessageImplementation implements IMessage {
 
 	@Override
 	public String saySomething() {
-		return "Hello from RMI say something";
+		return "Hello from RMI say something...";
 	}
 }

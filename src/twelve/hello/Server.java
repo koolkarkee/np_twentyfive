@@ -25,7 +25,7 @@ public class Server extends MessageImplementation  {
 		Registry registry = LocateRegistry.createRegistry(8070);
 		registry.bind("IMessage", stub);
 		
-		System.out.println("Remote Server is ready ... ");
+		System.out.println("Remote Server is ready... ");
 	}
 
 }

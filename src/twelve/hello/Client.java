@@ -14,7 +14,7 @@ public class Client {
 		//look up the registry
 		IMessage stub = (IMessage) registry.lookup("IMessage");
 
-		//calling the remote method
+		//calling the remote method 
 		stub.sayHello();
 		String s = stub.saySomething();
 		System.out.println(s);
